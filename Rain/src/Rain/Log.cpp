@@ -1,3 +1,4 @@
+#include "rnpch.h"
 #include "Log.h"
 
 namespace Rain {

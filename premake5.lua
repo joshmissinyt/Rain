@@ -17,6 +17,9 @@ project "Rain"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	
+	pchheader "rnpch.h"
+	pchsource "Rain/src/rnpch.cpp"
 
 	files
 	{
@@ -26,7 +29,7 @@ project "Rain"
 
 	includedirs
 	{
-		"Rain/src",
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 

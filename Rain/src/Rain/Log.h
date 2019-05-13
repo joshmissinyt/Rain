@@ -1,10 +1,9 @@
 #pragma once
 
-#include <memory>
-
 #include "Core.h"
 
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
 namespace Rain {
@@ -30,8 +29,8 @@ namespace Rain {
 #define RN_CORE_CRITICAL(...) ::Rain::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client Logging Macros
-#define RN_TRACE(...)    ::Rain::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define RN_INFO(...)     ::Rain::Log::GetClientLogger()->info(__VA_ARGS__)
-#define RN_WARN(...)     ::Rain::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define RN_ERROR(...)    ::Rain::Log::GetClientLogger()->error(__VA_ARGS__)
-#define RN_CRITICAL(...) ::Rain::Log::GetClientLogger()->critical(__VA_ARGS__)
+#define RN_TRACE(...)         ::Rain::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define RN_INFO(...)          ::Rain::Log::GetClientLogger()->info(__VA_ARGS__)
+#define RN_WARN(...)          ::Rain::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define RN_ERROR(...)         ::Rain::Log::GetClientLogger()->error(__VA_ARGS__)
+#define RN_CRITICAL(...)      ::Rain::Log::GetClientLogger()->critical(__VA_ARGS__)

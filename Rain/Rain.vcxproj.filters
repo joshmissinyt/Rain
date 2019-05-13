@@ -4,6 +4,9 @@
     <Filter Include="Rain">
       <UniqueIdentifier>{2FB18B7C-1BE8-8C0D-C4D4-7210B0EA080F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Rain\Events">
+      <UniqueIdentifier>{3352E641-9F07-5F37-28FC-580E94B0553B}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Rain.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Rain\EntryPoint.h">
       <Filter>Rain</Filter>
     </ClInclude>
+    <ClInclude Include="src\Rain\Events\ApplicationEvent.h">
+      <Filter>Rain\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rain\Events\Event.h">
+      <Filter>Rain\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rain\Events\KeyEvent.h">
+      <Filter>Rain\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rain\Events\MouseEvent.h">
+      <Filter>Rain\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Rain\Log.h">
       <Filter>Rain</Filter>
     </ClInclude>
+    <ClInclude Include="src\rnpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Rain\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Rain\Log.cpp">
       <Filter>Rain</Filter>
     </ClCompile>
+    <ClCompile Include="src\rnpch.cpp" />
   </ItemGroup>
 </Project>

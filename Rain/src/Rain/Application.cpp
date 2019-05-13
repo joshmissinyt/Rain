@@ -1,3 +1,4 @@
+#include "rnpch.h"
 #include "Application.h"
 
 namespace Rain {
