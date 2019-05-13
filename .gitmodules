@@ -1,3 +1,6 @@
 [submodule "Rain/vendor/spdlog"]
 	path = Rain/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Rain/vendor/GLFW"]
+	path = Rain/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

@@ -35,6 +35,8 @@
       <Filter>Rain</Filter>
     </ClInclude>
     <ClInclude Include="src\rnpch.h" />
+    <ClInclude Include="src\Rain\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Rain\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Rain</Filter>
     </ClCompile>
     <ClCompile Include="src\rnpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
