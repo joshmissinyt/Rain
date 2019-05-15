@@ -4,7 +4,7 @@
 
 namespace Rain {
 
-	class RN_API KeyEvent : public Event
+	class RAIN_API KeyEvent : public Event
 	{
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
@@ -20,7 +20,7 @@ namespace Rain {
 		int m_KeyCode;
 	};
 
-	class RN_API KeyPressedEvent : public KeyEvent
+	class RAIN_API KeyPressedEvent : public KeyEvent
 	{
 	public:
 		KeyPressedEvent(int keycode, int repeatCount)
@@ -43,7 +43,7 @@ namespace Rain {
 		int m_RepeatCount;
 	};
 
-	class RN_API KeyReleasedEvent : public KeyEvent
+	class RAIN_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
 		KeyReleasedEvent(int keycode)

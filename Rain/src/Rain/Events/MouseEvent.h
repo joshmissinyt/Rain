@@ -4,7 +4,7 @@
 
 namespace Rain {
 
-	class RN_API MouseMovedEvent : public Event
+	class RAIN_API MouseMovedEvent : public Event
 	{
 	public:
 		MouseMovedEvent(float x, float y)
@@ -29,7 +29,7 @@ namespace Rain {
 		float m_MouseX, m_MouseY;
 	};
 
-	class RN_API MouseScrolledEvent : public Event
+	class RAIN_API MouseScrolledEvent : public Event
 	{
 	public:
 		MouseScrolledEvent(float xOffset, float yOffset)
@@ -54,7 +54,7 @@ namespace Rain {
 		float m_XOffset, m_YOffset;
 	};
 
-	class RN_API MouseButtonEvent : public Event
+	class RAIN_API MouseButtonEvent : public Event
 	{
 	public:
 		inline int GetMouseButton() const { return m_Button; }
@@ -70,7 +70,7 @@ namespace Rain {
 		int m_Button;
 	};
 
-	class RN_API MouseButtonPressedEvent : public MouseButtonEvent
+	class RAIN_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonPressedEvent(int button)
@@ -89,7 +89,7 @@ namespace Rain {
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class RN_API MouseButtonReleasedEvent : public MouseButtonEvent
+	class RAIN_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
 		MouseButtonReleasedEvent(int button)

@@ -35,7 +35,7 @@ namespace Rain {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category; }
 
-	class RN_API Event
+	class RAIN_API Event
 	{
 	public:
 		bool Handled = false;

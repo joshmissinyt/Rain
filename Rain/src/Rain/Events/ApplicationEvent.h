@@ -4,7 +4,7 @@
 
 namespace Rain {
 
-	class RN_API WindowResizeEvent : public Event
+	class RAIN_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)
@@ -29,7 +29,7 @@ namespace Rain {
 		unsigned int m_Width, m_Height;
 	};
 
-	class RN_API WindowCloseEvent : public Event
+	class RAIN_API WindowCloseEvent : public Event
 	{
 	public:
 		WindowCloseEvent()
@@ -41,7 +41,7 @@ namespace Rain {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class RN_API AppTickEvent : public Event
+	class RAIN_API AppTickEvent : public Event
 	{
 	public:
 		AppTickEvent()
@@ -53,7 +53,7 @@ namespace Rain {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class RN_API AppUpdateEvent : public Event
+	class RAIN_API AppUpdateEvent : public Event
 	{
 	public:
 		AppUpdateEvent()
@@ -65,7 +65,7 @@ namespace Rain {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class RN_API AppRenderEvent : public Event
+	class RAIN_API AppRenderEvent : public Event
 	{
 	public:
 		AppRenderEvent() {}

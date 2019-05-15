@@ -8,7 +8,7 @@
 
 namespace Rain {
 
-	class RN_API Log
+	class RAIN_API Log
 	{
 	public:
 		static void Init();

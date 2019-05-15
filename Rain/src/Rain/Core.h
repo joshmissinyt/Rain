@@ -2,9 +2,9 @@
 
 #ifdef RN_PLATFORM_WINDOWS
 	#ifdef RN_BUILD_DLL
-		#define RN_API __declspec(dllexport)
+		#define RAIN_API __declspec(dllexport)
 	#else
-		#define RN_API __declspec(dllimport)
+		#define RAIN_API __declspec(dllimport)
 	#endif
 #else
 	#error Rain only supports Windows!

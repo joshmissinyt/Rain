@@ -2,7 +2,7 @@
 
 #include "rnpch.h"
 
-#include "Rain/Core.h"
+#include "Core.h"
 #include "Rain/Events/Event.h"
 
 namespace Rain {
@@ -23,7 +23,7 @@ namespace Rain {
 	};
 
 	// Interface representing a desktop-system based Window
-	class RN_API Window
+	class RAIN_API Window
 	{
 	public:
 		using EventCallbackFn = std::function<void(Event&)>;
