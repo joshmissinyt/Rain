@@ -53,6 +53,8 @@
       <Filter>Rain</Filter>
     </ClInclude>
     <ClInclude Include="src\rnpch.h" />
+    <ClInclude Include="src\Rain\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -71,5 +73,7 @@
       <Filter>Rain</Filter>
     </ClCompile>
     <ClCompile Include="src\rnpch.cpp" />
+    <ClCompile Include="src\Rain\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
   </ItemGroup>
 </Project>

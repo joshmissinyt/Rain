@@ -4,6 +4,7 @@
 #include "Rain/Application.h"
 #include "Rain/Layer.h"
 #include "Rain/Log.h"
+#include "Rain/ImGui/ImGuiLayer.h"
 
 // ----- Entry Point ----- //
 #include "Rain/EntryPoint.h"
