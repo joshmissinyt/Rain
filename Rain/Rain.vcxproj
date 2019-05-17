@@ -93,7 +93,7 @@
       <ImportLibrary>..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Debug-windows-${cfg.architecture}\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Debug-windows-${cfg.architecture}\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Debug-windows-${cfg.architecture}\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Debug-windows-${cfg.architecture}\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -119,7 +119,7 @@
       <ImportLibrary>..\bin\Release-windows-${cfg.architecture}\Rain\Rain.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Release-windows-${cfg.architecture}\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Release-windows-${cfg.architecture}\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Release-windows-${cfg.architecture}\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Release-windows-${cfg.architecture}\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -145,7 +145,7 @@
       <ImportLibrary>..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Dist-windows-${cfg.architecture}\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll ..\bin\Dist-windows-${cfg.architecture}\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Dist-windows-${cfg.architecture}\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-${cfg.architecture}\Rain\Rain.dll "..\bin\Dist-windows-${cfg.architecture}\Sandbox\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

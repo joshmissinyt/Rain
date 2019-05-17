@@ -1,5 +1,6 @@
 workspace "Rain"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -16,9 +17,12 @@ IncludeDir["GLFW"] = "Rain/vendor/GLFW/include"
 IncludeDir["Glad"] = "Rain/vendor/glad/include"
 IncludeDir["ImGui"] = "Rain/vendor/imgui"
 
-include "Rain/vendor/GLFW"
-include "Rain/vendor/glad"
-include "Rain/vendor/imgui"
+group "Dependencies"
+	include "Rain/vendor/GLFW"
+	include "Rain/vendor/glad"
+	include "Rain/vendor/imgui"
+	
+group ""
 
 project "Rain"
 	location "Rain"
@@ -68,7 +72,7 @@ project "Rain"
 
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
 		}
 
 	filter "configurations:Debug"
