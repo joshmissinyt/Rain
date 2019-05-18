@@ -162,9 +162,11 @@
     <ClInclude Include="src\Rain\Events\MouseEvent.h" />
     <ClInclude Include="src\Rain\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Rain\Input.h" />
+    <ClInclude Include="src\Rain\KeyCodes.h" />
     <ClInclude Include="src\Rain\Layer.h" />
     <ClInclude Include="src\Rain\LayerStack.h" />
     <ClInclude Include="src\Rain\Log.h" />
+    <ClInclude Include="src\Rain\MouseButtonCodes.h" />
     <ClInclude Include="src\Rain\Window.h" />
     <ClInclude Include="src\rnpch.h" />
   </ItemGroup>

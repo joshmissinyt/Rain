@@ -11,12 +11,12 @@ public:
 
 	void OnUpdate() override
 	{
-		RN_INFO("ExampleLayer::Update");
+		
 	}
 
 	void OnEvent(Rain::Event& event) override
 	{
-		RN_TRACE("{0}", event);
+		// RN_TRACE("{0}", event);
 	}
 };
 
